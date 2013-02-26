@@ -28,19 +28,24 @@ int main() {
    printf("Computer has chosen %c \n", compChar);
   
    switch(user) {
+   case 'R':
    case 'r':
      switch(compChar){
+     case 'R':
      case 'r':
        printf("Rock v Rock... a tie!\n");
        break;
+     case 'P':
      case 'p':
        printf("Rock v Paper... you lose!\n");
        break;
+     case 'S':
      case 's':
        printf("Rock v Scissors... you win!\n");
        break;
      }
      break;
+   case 'P':
    case 'p':
      switch(compChar){
      case 'r':
@@ -54,6 +59,7 @@ int main() {
        break;
      }
      break;
+   case 'S':
    case 's':
      switch(compChar){
      case 'r':
